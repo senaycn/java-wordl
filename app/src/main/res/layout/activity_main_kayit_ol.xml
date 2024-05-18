@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".MainKayitOl">
+
+    <ImageView
+        android:id="@+id/main_activity_kayit"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/giris"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,ImageContrastCheck"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/main_activity_kayit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/bilgi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Giriş Bilgilerinizi Oluşturun."
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/kayit_ol_editEmail"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:inputType="textEmailAddress"
+            android:hint="Geçerli bir mail adresi girin" />
+
+        <EditText
+            android:id="@+id/kayit_ol_editSifre"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:inputType="textPassword"
+            android:hint="Parola oluşturun" />
+
+
+        <Button
+            android:id="@+id/btnKaydet"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:onClick="kayitOl"
+            android:text="Kaydet" />
+
+        <Button
+            android:id="@+id/btnGiriseDon"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:text="Girişe Dön" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainAnasayfa">
+
+    <ImageView
+        android:id="@+id/main_activity_kayit"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/kitp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/btnBeginner"
+        android:layout_width="138dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="9dp"
+        android:text="beginner"
+        app:layout_constraintBottom_toTopOf="@+id/btnIntermediate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnIntermediate"
+        android:layout_width="138dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="110dp"
+        android:text="intermediate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdvanced"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBeginner" />
+
+    <Button
+        android:id="@+id/btnAdvanced"
+        android:layout_width="138dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:text="advanced"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIntermediate" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginBottom="18dp"
+        android:text="Öğrenmeye başlamak için seviye seçin."
+        app:layout_constraintBottom_toTopOf="@+id/btnBeginner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
